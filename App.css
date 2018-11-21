@@ -1,0 +1,383 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+* { box-sizing: border-box; }
+
+
+/* STRUCTURE */
+
+.wrapper {
+  background: url('./images/clear-green.png') center center;
+  background-size: cover;
+  height: 100%;
+  box-shadow: inset 0 0.5rem 5rem rgba(0,0,0,.75);
+	padding: 5px;
+}
+header {
+  margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.game-heading {
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 400%;
+  color: #D7EFE7;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.columns {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+}
+
+
+footer {
+	padding: 0 15px;
+}
+
+
+@media screen and (max-width: 980px) {
+  .wrapper {
+    background: url('./images/clear-green.png') center center;
+    background-size: cover;
+    height: auto;
+    box-shadow: inset 0 0.5rem 5rem rgba(0,0,0,.75);
+  	padding: 5px;
+  }
+
+  .game-heading {
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 300%;
+    color: #D7EFE7;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+
+  .columns .column {
+		margin-bottom: 5px;
+    flex-basis: 40%;
+		&:nth-last-child(2) {
+			margin-right: 0;
+		}
+		&:last-child {
+			flex-basis: 100%;
+			margin: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 820px) {
+  .game-heading {
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 200%;
+    color: #D7EFE7;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+  .wrapper {
+    background: url('./images/clear-green.png') center center;
+    background-size: cover;
+    height: auto;
+    box-shadow: inset 0 0.5rem 5rem rgba(0,0,0,.75);
+  	padding: 5px;
+  }
+	.columns .column {
+		flex-basis: 100%;
+		margin: 0 0 5px 0;
+	}
+}
+
+
+@media screen and (max-width: 680px) {
+  .game-heading {
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 200%;
+    color: #D7EFE7;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+  .wrapper {
+    background: url('./images/clear-green.png') center center;
+    background-size: cover;
+    height: auto;
+    box-shadow: inset 0 0.5rem 5rem rgba(0,0,0,.75);
+  	padding: 5px;
+  }
+	.columns .column {
+		flex-basis: 100%;
+		margin: 0 0 5px 0;
+	}
+}
+
+
+.container-fluid {
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.screen-bg {
+  background: url('./images/login-bg.png') center center;
+  background-size: cover;
+  box-shadow: inset 0 0.5rem 5rem rgba(0,0,0,.75);
+  height: 100vh;
+  padding: 1% 0;
+}
+
+.game-bg {
+  background: url('./images/clear-green.png') center center;
+  background-size: cover;
+  box-shadow: inset 0 0.5rem 5rem rgba(0,0,0,.75);
+  height: 1000px;
+  padding: 1% 0;
+}
+
+.heading-box {
+  position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(0,0,0,.35);
+}
+
+.heading-box h1{
+  margin: 0;
+}
+
+.board-box {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  width: 90%;
+  height: 50%;
+  min-width: 1000px;
+}
+
+.hidden-row {
+  display: flex;
+}
+
+.hidden-row > div {
+  flex: 1;
+}
+
+.column {
+  width: 33.3%;
+  float: left;
+  text-align: center;
+  min-width: 300px;
+}
+
+.rules {
+  color: #fff;
+}
+
+.player {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.player h2 {
+  margin: 0px;
+  font-size: 300%;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.player p {
+  font-size: 150%;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.login-box {
+  position: absolute;
+  text-align: center;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(0,0,0,.35);
+}
+
+.login-box input, button{
+    border: 1px solid #e6e9ef;
+    color: #2D9175;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    transition: all .25s;
+    padding: .75rem;
+}
+
+.login-box input::placeholder{
+    color: #2D9175;
+}
+
+.rules h2 {
+  margin: 0px;
+  font-size: 300%;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.rules p {
+  font-size: 150%;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.heading-box h1{
+  font-size: 500%;
+  color: #D7EFE7;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+
+#main {
+  background-color: #e6e6e6;
+  width: 100%;
+}
+
+.game{
+  position: absolute;
+  float: left;
+  width: 100%;
+  left: 30%;
+  height: 1000px;
+}
+
+#heading {
+  font-size: 42px;
+  color: #808080;
+  position: absolute;
+  float: left;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.form {
+  float: left;
+  border-color: #6e86ad;
+  width: 32%;
+  border-style: solid;
+  border-radius: 4px;
+  border-width: 6px;
+  position: absolute;
+  padding-left: 5%;
+  top: 25%;
+  margin-left: 34%;
+}
+
+.register {
+  width: 30%;
+}
+
+.hiddenLetter {
+  height: 45px;
+  width: 45px;
+  background-color: #69b2a5;
+  text-align: center;
+  margin-top: 10%;
+  margin-right: 15px;
+  float: left;
+  left: 50%;
+}
+
+.hangman-picture-won{
+  background: url('./images/hangmanWon.png') no-repeat 0 0;
+  height: 274px;
+  width: 75%;
+  margin: auto;
+}
+
+.hangman-picture-0{
+  background: url('./images/hangman0.png') no-repeat 0 0;
+  height: 274px;
+  width: 75%;
+  margin: auto;
+}
+
+.hangman-picture-1{
+  background: url('./images/hangman1.png') no-repeat 0 0;
+  height: 274px;
+  width: 75%;
+  margin: auto;
+}
+
+.hangman-picture-2{
+  background: url('./images/hangman2.png') no-repeat 0 0;
+  height: 274px;
+  width: 75%;
+  margin: auto;
+}
+
+.hangman-picture-3{
+  background: url('./images/hangman3.png') no-repeat 0 0;
+  height: 274px;
+  width: 75%;
+  margin: auto;
+}
+
+.hangman-picture-4{
+  background: url('./images/hangman4.png') no-repeat 0 0;
+  height: 274px;
+  width: 75%;
+  margin: auto;
+}
+
+.hangman-picture-5{
+  background: url('./images/hangman5.png') no-repeat 0 0;
+  height: 274px;
+  width: 75%;
+  margin: auto;
+}
+
+.hangman-picture-6{
+  background: url('./images/hangman6.png') no-repeat 0 0;
+  height: 274px;
+  width: 75%;
+  margin: auto;
+}
+
+.picture{
+  margin:auto;
+}
+
+#category {
+  color: #808080;
+  position: absolute;
+  margin-top: 15px;
+  float: left;
+  left: 25%;
+  top: 25%;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#restart-button {
+  cursor: pointer;
+  color: white;
+  background-color: #69b2a5;
+  font-size: 25px;
+  border: none;
+  position: absolute;
+  margin-top: 15px;
+  float: left;
+  left: 25%;
+  top: 25%;
+  width: 140px;
+  height: 46px;
+  font-weight: bold;
+}
